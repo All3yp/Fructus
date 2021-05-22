@@ -1,4 +1,4 @@
-//
+// swiftlint disable: trailing_whitespace
 //  FruitCardView.swift
 //  Fructus
 //
@@ -10,6 +10,8 @@ import SwiftUI
 struct FruitCardView: View {
 
     // MARK: - Properties
+
+    var fruit: Fruit
     @State private var isAnimating: Bool = false
 
     // MARK: - Body
@@ -17,7 +19,7 @@ struct FruitCardView: View {
         ZStack {
             VStack(spacing: 20) {
                 // Fruit: image
-                Image("blueberry")
+                Image(fruit.image)
                     .resizable()
                     .scaledToFit()
                     .shadow(color: Color(red: 0,
@@ -27,7 +29,7 @@ struct FruitCardView: View {
                             radius: 8, x: 6, y: 8)
                     .scaleEffect(isAnimating ? 1.0 : 0.6)
                 // fruit title
-                Text("Blueberry")
+                Text(fruit.title)
                     .foregroundColor(Color.white)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
@@ -37,7 +39,7 @@ struct FruitCardView: View {
                                          opacity: 0.15),
                             radius: 2, x: 2, y: 2)
                 // Fruit: headline
-                Text("Blueberries are sweet, nutritious and wildly popular fruit all over the world.")
+                Text(fruit.headline)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -53,13 +55,12 @@ struct FruitCardView: View {
         }
         .frame(minWidth: 0,
                maxWidth: .infinity,
-               minHeight: 0, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
-               alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+               minHeight: 0, maxHeight: .infinity,
+               alignment: .center)
 
         .background(LinearGradient(
                         gradient: Gradient(
-                            colors: [Color("ColorBlueberryLight"),
-                                     Color("ColorBlueberryDark")]),
+                            colors: fruit.gradientColors),
                         startPoint: .top, endPoint: .bottom))
         .cornerRadius(20)
         .padding(.horizontal, 20)
@@ -69,8 +70,7 @@ struct FruitCardView: View {
 // MARK: - Preview
 struct FruitCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitCardView()
-//            .previewDevice("iphone 11")
+        FruitCardView(fruit: fruitsData[9])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }
