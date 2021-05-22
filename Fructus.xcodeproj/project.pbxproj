@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18F80F9026573CE300F42D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F8F26573CE300F42D86 /* AppDelegate.swift */; };
-		18F80F9226573CE300F42D86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F9126573CE300F42D86 /* SceneDelegate.swift */; };
+		1842381F2659998200DF5F74 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842381E2659998200DF5F74 /* FruitModel.swift */; };
+		1842382226599BDC00DF5F74 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842382126599BDC00DF5F74 /* FruitData.swift */; };
+		1842382E2659B0C800DF5F74 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1842382D2659B0C800DF5F74 /* ColorExtension.swift */; };
 		18F80F9426573CE300F42D86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F80F9326573CE300F42D86 /* ContentView.swift */; };
 		18F80F9626573CE600F42D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F80F9526573CE600F42D86 /* Assets.xcassets */; };
 		18F80F9926573CE600F42D86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F80F9826573CE600F42D86 /* Preview Assets.xcassets */; };
@@ -20,9 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1842381E2659998200DF5F74 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		1842382126599BDC00DF5F74 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
+		1842382D2659B0C800DF5F74 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		18F80F8C26573CE300F42D86 /* Fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18F80F8F26573CE300F42D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18F80F9126573CE300F42D86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18F80F9326573CE300F42D86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18F80F9526573CE600F42D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F80F9826573CE600F42D86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1842381D2659997300DF5F74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1842381E2659998200DF5F74 /* FruitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1842382026599BC900DF5F74 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1842382126599BDC00DF5F74 /* FruitData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1842382C2659B07C00DF5F74 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1842382D2659B0C800DF5F74 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		18F80F8326573CE300F42D86 = {
 			isa = PBXGroup;
 			children = (
@@ -64,8 +90,9 @@
 		18F80F8E26573CE300F42D86 /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				18F80F8F26573CE300F42D86 /* AppDelegate.swift */,
-				18F80F9126573CE300F42D86 /* SceneDelegate.swift */,
+				1842382C2659B07C00DF5F74 /* Extension */,
+				1842382026599BC900DF5F74 /* Data */,
+				1842381D2659997300DF5F74 /* Model */,
 				18F80FA626574EA400F42D86 /* View */,
 				18F80FA326574E6400F42D86 /* App */,
 				18F80F9526573CE600F42D86 /* Assets.xcassets */,
@@ -113,6 +140,7 @@
 				18F80F8826573CE300F42D86 /* Sources */,
 				18F80F8926573CE300F42D86 /* Frameworks */,
 				18F80F8A26573CE300F42D86 /* Resources */,
+				1842382A2659ADFD00DF5F74 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -168,17 +196,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1842382A2659ADFD00DF5F74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18F80F8826573CE300F42D86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F80F9026573CE300F42D86 /* AppDelegate.swift in Sources */,
+				1842382226599BDC00DF5F74 /* FruitData.swift in Sources */,
 				18F80FA826574ECA00F42D86 /* FruitCardView.swift in Sources */,
 				18F80FAA265758B400F42D86 /* StartButtonView.swift in Sources */,
-				18F80F9226573CE300F42D86 /* SceneDelegate.swift in Sources */,
+				1842382E2659B0C800DF5F74 /* ColorExtension.swift in Sources */,
 				18F80F9426573CE300F42D86 /* ContentView.swift in Sources */,
 				18F80FAC26575E2900F42D86 /* OnboardingView.swift in Sources */,
+				1842381F2659998200DF5F74 /* FruitModel.swift in Sources */,
 				18F80FAE26575F5E00F42D86 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
