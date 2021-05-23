@@ -1,5 +1,9 @@
-// swiftlint:disable all
-// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+// 
+//  ColorExtension.swift
+//  Fructus
+//
+//  Created by Alley Pereira on 22/05/21.
+//
 
 import SwiftUI
 
@@ -33,19 +37,4 @@ extension Color {
   public static let colorStrawberryLight = Color.init("ColorStrawberryLight")
   public static let colorWatermelonDark = Color.init("ColorWatermelonDark")
   public static let colorWatermelonLight = Color.init("ColorWatermelonLight")
-//  public static let apple = ImageAsset(name: "apple")
-//  public static let blueberry = ImageAsset(name: "blueberry")
-//  public static let cherry = ImageAsset(name: "cherry")
-//  public static let gooseberry = ImageAsset(name: "gooseberry")
-//  public static let grapefruit = ImageAsset(name: "grapefruit")
-//  public static let lemon = ImageAsset(name: "lemon")
-//  public static let lime = ImageAsset(name: "lime")
-//  public static let mango = ImageAsset(name: "mango")
-//  public static let pear = ImageAsset(name: "pear")
-//  public static let plum = ImageAsset(name: "plum")
-//  public static let pomegranate = ImageAsset(name: "pomegranate")
-//  public static let strawberry = ImageAsset(name: "strawberry")
-//  public static let watermelon = ImageAsset(name: "watermelon")
-//  public static let logo = ImageAsset(name: "logo")
-
 }
