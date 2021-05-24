@@ -57,6 +57,7 @@ struct FruitDetailView: View {
             } //: Scrool
             .edgesIgnoringSafeArea(.top)
         } //: Navigation
+        .navigationViewStyle(StackNavigationViewStyle()) // Ipad
     }
 }
 

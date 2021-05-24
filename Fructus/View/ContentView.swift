@@ -38,6 +38,7 @@ struct ContentView: View {
             })
             )
         } //: Navigation
+        .navigationViewStyle(StackNavigationViewStyle()) // Ipad
     }
 }
 

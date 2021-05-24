@@ -87,6 +87,20 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		18F63A6C265B5A070071F2F7 /* Component View */ = {
+			isa = PBXGroup;
+			children = (
+				187C49D62659D2520022DA2B /* FruitRowView.swift */,
+				18474302265A09930096AC66 /* FruitHeaderView.swift */,
+				18F63A68265B44400071F2F7 /* SettingsLabelView.swift */,
+				18F63A6A265B51310071F2F7 /* SettingsRowView.swift */,
+				18F63A64265B0B350071F2F7 /* FruitNutrientsView.swift */,
+				18F63A62265AF7BE0071F2F7 /* SourceLinkView.swift */,
+				18F80FA9265758B400F42D86 /* StartButtonView.swift */,
+			);
+			path = "Component View";
+			sourceTree = "<group>";
+		};
 		18F80F8326573CE300F42D86 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +120,7 @@
 		18F80F8E26573CE300F42D86 /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
+				18F63A6C265B5A070071F2F7 /* Component View */,
 				1842382C2659B07C00DF5F74 /* Extension */,
 				1842382026599BC900DF5F74 /* Data */,
 				1842381D2659997300DF5F74 /* Model */,
@@ -130,16 +145,7 @@
 		18F80FA326574E6400F42D86 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				184238322659D08100DF5F74 /* ContentView.swift */,
-				18474300265A01B80096AC66 /* FruitDetailView.swift */,
-				18474302265A09930096AC66 /* FruitHeaderView.swift */,
 				18F80FAD26575F5E00F42D86 /* FructusApp.swift */,
-				18F80FAB26575E2900F42D86 /* OnboardingView.swift */,
-				18F63A62265AF7BE0071F2F7 /* SourceLinkView.swift */,
-				18F63A64265B0B350071F2F7 /* FruitNutrientsView.swift */,
-				18F63A66265B361E0071F2F7 /* SettingsView.swift */,
-				18F63A6A265B51310071F2F7 /* SettingsRowView.swift */,
-				18F63A68265B44400071F2F7 /* SettingsLabelView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -147,9 +153,11 @@
 		18F80FA626574EA400F42D86 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184238322659D08100DF5F74 /* ContentView.swift */,
+				18F63A66265B361E0071F2F7 /* SettingsView.swift */,
+				18474300265A01B80096AC66 /* FruitDetailView.swift */,
+				18F80FAB26575E2900F42D86 /* OnboardingView.swift */,
 				18F80FA726574ECA00F42D86 /* FruitCardView.swift */,
-				18F80FA9265758B400F42D86 /* StartButtonView.swift */,
-				187C49D62659D2520022DA2B /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
