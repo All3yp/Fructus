@@ -1,4 +1,4 @@
-// swiftlint disable: trailing_whitespace
+// 
 //  FruitCardView.swift
 //  Fructus
 //
