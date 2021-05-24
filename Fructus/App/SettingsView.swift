@@ -21,7 +21,7 @@ struct SettingsView: View {
 
                     GroupBox(
                         label:
-                    SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
+                            SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
                     ) {
                         Divider().padding(.vertical, 4)
 
@@ -40,6 +40,22 @@ struct SettingsView: View {
                     // MARK: - SECTION 2
 
                     // MARK: - SECTION 3
+
+                    GroupBox(
+                        label: SettingsLabelView(
+                            labelText: "Aplication",
+                            labelImage: "apps.iphone")
+                    ) {
+
+                       SettingsRowView(name: "Developer", content: "Alley Pereira")
+                        SettingsRowView(name: "Designer", content: "Robert Petras")
+                        SettingsRowView(name: "Compability", content: "iOS 14")
+                        SettingsRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "credo.academy")
+                        SettingsRowView(name: "LinkedIn", linkLabel: "Alley Pereira", linkDestination: "linkedin.com/in/halley-pereira")
+                        SettingsRowView(name: "SwiftUI", content: "2.0")
+                        SettingsRowView(name: "Version", content: "1.1.0")
+
+                    }  //: GroupBox
 
                 } //: VStack
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
